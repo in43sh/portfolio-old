@@ -1,0 +1,29 @@
+.projects-main-container-parent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-main-container-child {
+  width: 80%;
+  background-color: rgb(232, 231, 231);
+}
+
+.projects-content-container {
+  padding-top: 0px;
+}
+
+.projects-items-container {
+  display: flex;
+  justify-content:  space-around;
+}
+
+.projects-item-image-container {
+  height: 200px;
+}
+
+.projects-item-image-container img {
+  height: 100%;
+}

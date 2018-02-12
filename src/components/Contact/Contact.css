@@ -1,0 +1,12 @@
+.contact-main-container-parent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-main-container-child {
+  width: 80%;
+  background-color: white;
+}

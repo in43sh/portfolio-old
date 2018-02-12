@@ -1,0 +1,35 @@
+.skills-main-container-parent {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-main-container-child {
+  width: 80%;
+  background-color: white;
+  margin: 0;
+}
+
+.skills-content-container {
+  padding-top: 80px;
+}
+
+.skills-list {
+  /* why flex direction is not working here? */
+  /* display: flex;
+  flex-direction: row; */
+  list-style: none;
+}
+
+.skills-list li {
+  display: inline-block;
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+.skills-content-container ul {
+  margin: 0;
+  padding: 0;
+}

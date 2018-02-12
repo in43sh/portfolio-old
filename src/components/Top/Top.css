@@ -1,0 +1,45 @@
+.top-main-container {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url("../images/stephan-jola-3332.jpg");
+  background-position: center center;
+  background-size: cover;
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.top-content-container {
+  width: 50%;
+  color:  white;
+  display: flex;
+  flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.top-empty-container {
+  width: 50%;
+}
+
+.intro-1 {
+  font-size: 40px;
+}
+
+.intro-2 {
+  font-size: 50px;
+}
+
+.tell-me-more-btn {
+  background-color: rgb(92, 180, 207);
+  border: none;
+  padding: 15px 32px;
+}
