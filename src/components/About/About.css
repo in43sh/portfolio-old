@@ -1,12 +1,32 @@
-.about-main-container {
+.about-main-container-parent {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #F8F9FA;
 }
 
-.about-content-container {
-  width: 80%;
-  background-color: rgb(194, 198, 238);
+.about-main-container-child {
+  width: 70%;
 }
+
+.about-my-photo-container {
+  height: 250px;
+}
+
+.about-my-photo-container img {
+  height: 100%;
+}
+
+.about-social-links {
+  list-style: none;
+}
+
+.about-social-links li {
+  display: inline-block;
+  margin: 2rem;
+  font-size: 40px;
+} 

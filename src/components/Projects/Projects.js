@@ -8,27 +8,25 @@ export default class Projects extends Component {
     return (
       <div className="projects-main-container-parent">
         <div className="projects-main-container-child">
+          <h1>Projects</h1>
           <div className="projects-content-container">
-            <h1>Projects</h1>
-            <div className="projects-items-container">
 
-              <div className="project-item-container">
-                <a href="http://aivazovsky.us/" target="_blank" rel="noopener noreferrer">
-                  <div className="projects-item-image-container">
-                    <img src={pic} alt="aivazovsky.us" />
-                  </div>
-                  <div className="projects-item-description">Aizakovsky.us</div>
-                </a>
-              </div>
+            <div className="projects-item-container">
+              <a href="http://aivazovsky.us/" target="_blank" rel="noopener noreferrer">
+                <div className="projects-item-image-container">
+                  <img src={pic} alt="aivazovsky.us" />
+                </div>
+                <div className="projects-item-description">Aizakovsky.us</div>
+              </a>
+            </div>
 
-              <div className="projects-item-container">
-                <a href="http://aivazovsky.us/" target="_blank" rel="noopener noreferrer">
-                  <div className="projects-item-image-container">
-                    <img src={pic} alt="aivazovsky.us" />
-                  </div>
-                  <div className="projects-item-description">group project</div>
-                </a>
-              </div>
+            <div className="projects-item-container">
+              <a href="http://aivazovsky.us/" target="_blank" rel="noopener noreferrer">
+                <div className="projects-item-image-container">
+                  <img src={pic} alt="aivazovsky.us" />
+                </div>
+                <div className="projects-item-description">group project</div>
+              </a>
             </div>
           </div>
         </div>

@@ -2,11 +2,60 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: white;
 }
 
 .contact-main-container-child {
-  width: 80%;
-  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: baseline;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.contact-info-container {
+  width: 50%;
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  /* background-color: white; */
+}
+
+.contact-info-container input {
+  width: 90%; 
+  padding: 25px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+}
+
+.contact-input-container {
+  margin: 12px;
+}
+
+.contact-message-container {
+  width: 50%;
+}
+
+.contact-message-container textarea {
+  width: 90%;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.send-message-btn button {
+  background-color: rgb(92, 180, 207);
+  font-size: 18px;
+  padding: 20px;
+  font-family: Montserrat;
+  font-weight: 700;
 }

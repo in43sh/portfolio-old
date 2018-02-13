@@ -1,0 +1,19 @@
+.footer-container {
+  width: 100%;
+  background-color: rgb(92, 180, 207);
+  display: flex;
+}
+
+.footer-left-empty {
+  width: 20%;
+}
+
+.footer-content {
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-right-empty {
+  width: 20%;
+}
