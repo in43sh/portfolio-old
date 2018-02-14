@@ -2,6 +2,7 @@
   width: 100%;
   background-color: rgb(92, 180, 207);
   display: flex;
+  color: white;
 }
 
 .footer-left-empty {
@@ -11,7 +12,7 @@
 .footer-content {
   width: 80%;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
 }
 
 .footer-right-empty {

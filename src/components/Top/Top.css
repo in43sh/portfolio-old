@@ -40,6 +40,10 @@
 
 .tell-me-more-btn {
   background-color: rgb(92, 180, 207);
+  font-size: 1rem;
+  font-weight: 700;
   border: none;
   padding: 15px 32px;
+  color: white;
+  border-radius: 0.25rem;
 }

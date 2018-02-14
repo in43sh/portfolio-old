@@ -23,10 +23,13 @@
 
 .about-social-links {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .about-social-links li {
   display: inline-block;
-  margin: 2rem;
+  
+  margin: 1rem;
   font-size: 40px;
 } 
