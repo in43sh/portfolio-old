@@ -13,7 +13,7 @@ export default class About extends Component {
           </div>
           <div className="about-my-name">Sergey Sherstobitov</div>
           <div className="about-myself">
-            <p>I'm a full stack developer passionate about Javascript, aveything related to it and eager to learn.</p>
+            <p>JavaScript developer with strong understanding of back-end.</p>
           </div>
           
           <div>
