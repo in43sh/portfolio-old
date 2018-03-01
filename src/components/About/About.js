@@ -11,15 +11,24 @@ export default class About extends Component {
           <div className="about-my-photo-container">
             <img src={ photo } alt="my-profile"/>
           </div>
+          <div className="about-my-name">Sergey Sherstobitov</div>
           <div className="about-myself">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
-            <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</p>
+            <p>I'm a full stack developer passionate about Javascript, aveything related to it and eager to learn.</p>
           </div>
           
           <div>
             <ul className="about-social-links">
-              <li><i className="fab fa-linkedin"></i></li>
-              <li><i className="fab fa-github-square"></i></li>
+              <li>
+                <a className="stuff" href="https://www.linkedin.com/in/sergey-sherstobitov/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                
+              </li>
+              <li>
+                <a href="https://github.com/in43sh" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github-square"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

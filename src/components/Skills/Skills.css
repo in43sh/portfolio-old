@@ -1,5 +1,5 @@
 .skills-main-container-parent {
-  height: 80vh;
+  min-height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -8,7 +8,8 @@
 }
 
 .skills-content-container {
-  padding-top: 80px;
+  padding-top: 20px;
+  width: 80%;
 }
 
 .skills-list {
@@ -21,10 +22,23 @@
 .skills-list li {
   display: inline-block;
   margin: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.skill-icon:hover {
+  color: rgb(92, 180, 207);
 }
 
 .skills-content-container ul {
   margin: 0;
   padding: 0;
+}
+
+.skills-list i {
+  font: 1rem;
+}
+
+.skills-list p {
+  margin: 0;
+  font: 1rem solid black;
 }

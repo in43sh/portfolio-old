@@ -15,10 +15,10 @@ class App extends Component {
         <nav className="navigation">
         <a className="links" href="#top">My portfolio</a>
           <div className="link-wrap">
+            <a className="links" href="#about">About</a>
             <a className="links" href="#skills">Skills</a>
             <a className="links" href="#portfolio">Portfolio</a>
-            <a className="links" href="#about">About</a>
-            <a className="links" href="#contact">Contact</a>
+            {/*<a className="links" href="#contact">Contact</a>*/}
           </div>
         </nav>
 
@@ -26,7 +26,7 @@ class App extends Component {
         <div id="about"><About /></div>
         <div id="skills"><Skills/></div>
         <div id="portfolio"><Porfolio /></div>
-        <div id="contact"><Contact/></div>
+        {/*<div id="contact"><Contact/></div>*/}
         <Footer/>
       </div>
     );
@@ -34,3 +34,22 @@ class App extends Component {
 }
 
 export default App;
+
+
+{/*<nav className="navigation">
+        <a className="links" href="#top"></a>
+        <Scroll className="links" type="id" element="_top">My portfolio</Scroll>
+          
+          <div className="link-wrap">
+            <a className="links" href="#about">About</a>
+            <a className="links" href="#skills">Skills</a>
+            <a className="links" href="#portfolio">Portfolio</a>
+            <a className="links" href="#contact">Contact</a>
+          </div>
+          
+          <div className="link-wrap">
+            <Scroll className="links" type="id" element="_about">About</Scroll>
+            <Scroll className="links" type="id" element="_skills">Skills</Scroll>
+            <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
+          </div>
+        </nav>*/}

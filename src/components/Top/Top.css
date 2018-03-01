@@ -47,3 +47,7 @@
   color: white;
   border-radius: 0.25rem;
 }
+
+.tell-me-more-btn:hover {
+  background-color: rgb(56, 160, 191);
+}

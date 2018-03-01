@@ -25,6 +25,47 @@
 .links {
   font-size: 20px;
   text-decoration: none;
-  margin: 25px;
+  padding: 25px;
   color: white;
 }
+
+.links:active {
+  background-color: rgb(56, 160, 191);
+}
+
+/*
+.navigation span {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.link-wrap > span {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 25px;
+  color: white;
+}
+
+.links:active {
+  background-color: rgb(56, 160, 191);
+}
+
+.link-wrap > span:active {
+  background-color: rgb(56, 160, 191);
+}
+
+.main-container > span:active {
+  background-color: rgb(56, 160, 191);
+}
+*/

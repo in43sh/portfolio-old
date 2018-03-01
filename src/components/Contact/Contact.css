@@ -61,3 +61,7 @@
   color: white;
   border-radius: 0.25rem;
 }
+
+.send-message-btn button:hover {
+  background-color: rgb(56, 160, 191);
+}
