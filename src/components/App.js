@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Scroll from 'react-scroll-to-element';
+
 import Top from './Top/Top';
 import Skills from './Skills/Skills';
 import Porfolio from './Projects/Projects';
@@ -13,43 +15,25 @@ class App extends Component {
     return (
       <div className="main-container">
         <nav className="navigation">
-        <a className="links" href="#top">My portfolio</a>
+          <Scroll className="links" type="id" element="_top">My portfolio</Scroll>
+
           <div className="link-wrap">
-            <a className="links" href="#about">About</a>
-            <a className="links" href="#skills">Skills</a>
-            <a className="links" href="#portfolio">Portfolio</a>
-            <a className="links" href="#contact">Contact</a>
+            <Scroll className="links" type="id" element="_about">About</Scroll>
+            <Scroll className="links" type="id" element="_skills">Skills</Scroll>
+            <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
+            <Scroll className="links" type="id" element="_contact">Contact</Scroll>
           </div>
         </nav>
 
-        <div id="top"><Top/></div>
-        <div id="about"><About /></div>
-        <div id="skills"><Skills/></div>
-        <div id="portfolio"><Porfolio /></div>
-        <div id="contact"><Contact/></div>
-        <Footer/>
+        <div id="_top"><Top /></div>
+        <div id="_about"><About /></div>
+        <div id="_skills"><Skills /></div>
+        <div id="_portfolio"><Porfolio /></div>
+        <div id="_contact"><Contact /></div>
+        <Footer />
       </div>
     );
   }
 }
 
 export default App;
-
-
-{/* <nav className="navigation">
-        <a className="links" href="#top"></a>
-        <Scroll className="links" type="id" element="_top">My portfolio</Scroll>
-          
-          <div className="link-wrap">
-            <a className="links" href="#about">About</a>
-            <a className="links" href="#skills">Skills</a>
-            <a className="links" href="#portfolio">Portfolio</a>
-            <a className="links" href="#contact">Contact</a>
-          </div>
-          
-          <div className="link-wrap">
-            <Scroll className="links" type="id" element="_about">About</Scroll>
-            <Scroll className="links" type="id" element="_skills">Skills</Scroll>
-            <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
-          </div>
-        </nav> */}

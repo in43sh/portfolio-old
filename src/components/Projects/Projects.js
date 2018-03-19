@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import aivazovsky from '../images/aivazovsky.jpg';
+// import aivazovsky from '../images/aivazovsky.jpg';
 import group from '../images/group.png'
 // import group from '../images/group.jpg';
 
