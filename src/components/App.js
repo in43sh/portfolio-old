@@ -27,6 +27,7 @@ class App extends Component {
             <Scroll className="links" type="id" element="_skills">Skills</Scroll>
             <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
             <Scroll className="links" type="id" element="_contact">Contact</Scroll>
+            <div className="empty-container-25px"></div>
           </div>
         </nav>
 

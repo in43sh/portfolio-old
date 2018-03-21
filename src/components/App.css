@@ -45,17 +45,9 @@
 }
 
 .navigation span {
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
-  padding: 25px;
-  color: white;
-  cursor: pointer;
-}
-
-.link-wrap > span {
-  font-size: 15px;
-  text-decoration: none;
-  padding: 15px;
+  padding: 20px 10px;
   color: white;
   cursor: pointer;
 }
@@ -79,20 +71,26 @@
   background-color: rgb(56, 160, 191);
 }
 
-@media (min-width: 414px) {
-  .link-wrap > span {
+@media (min-width: 321px) {
+  .navigation span {
     font-size: 20px;
     text-decoration: none;
-    padding: 25px;
+    padding: 25px 10px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 414px) {
+  .navigation span {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 25px 10px;
     color: white;
     cursor: pointer;
   }
 
-  .navigation span {
-    font-size: 15px;
-    text-decoration: none;
-    padding: 25px;
-    color: white;
-    cursor: pointer;
+  .empty-container-25px {
+    width: 25px;
   }
 }
