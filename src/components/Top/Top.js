@@ -14,9 +14,7 @@ export default class Top extends Component {
           <Scroll className="tell-me-more" type="id" element="_about">
             <button className="tell-me-more-btn">TELL ME MORE</button>
           </Scroll>
-          <a className="tell-me-more" href="#skills">
-            
-          </a>
+          
         </div>
         <div className="top-empty-container"></div>
       </div>

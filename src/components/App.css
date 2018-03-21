@@ -11,10 +11,21 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(92, 180, 207);
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.logo-container {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
 }
 
 .link-wrap {
@@ -33,9 +44,8 @@
   background-color: rgb(56, 160, 191);
 }
 
-
 .navigation span {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   padding: 25px;
   color: white;
@@ -43,9 +53,9 @@
 }
 
 .link-wrap > span {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
-  padding: 25px;
+  padding: 15px;
   color: white;
   cursor: pointer;
 }
@@ -53,7 +63,7 @@
 .links {
   font-size: 20px;
   text-decoration: none;
-  padding: 25px;
+  padding: 10px;
   color: white;
 }
 
@@ -67,4 +77,22 @@
 
 .main-container > span:active {
   background-color: rgb(56, 160, 191);
+}
+
+@media (min-width: 414px) {
+  .link-wrap > span {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navigation span {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+  }
 }

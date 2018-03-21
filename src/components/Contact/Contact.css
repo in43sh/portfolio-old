@@ -11,7 +11,7 @@
 
 .contact-main-container-child {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: baseline;
   align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .contact-info-container {
-  width: 50%;
+  width: 90%;
   display: flex;
   margin: 5px;
   flex-direction: column;
@@ -67,15 +67,23 @@
   background-color: rgb(56, 160, 191);
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 414px) {
   .contact-main-container-child {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: baseline;
     align-items: center;
     align-content: stretch;
     padding-top: 20px;
     width: 90%;
+  }
+
+  .contact-info-container {
+    width: 50%;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    /* background-color: white; */
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './images/person.png';
 
 import Scroll from 'react-scroll-to-element';
 
@@ -15,7 +16,11 @@ class App extends Component {
     return (
       <div className="main-container">
         <nav className="navigation">
-          <Scroll className="links" type="id" element="_top">My portfolio</Scroll>
+          <div className="logo-container">
+            <Scroll className="links" type="id" element="_top">
+              <img className="logo" src={logo} alt="my logo"/>
+            </Scroll>
+          </div>
 
           <div className="link-wrap">
             <Scroll className="links" type="id" element="_about">About</Scroll>
