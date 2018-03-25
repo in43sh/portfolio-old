@@ -46,7 +46,7 @@ export default class Contact extends Component {
             </div> 
           </div>
           <div className="contact-message-container">
-            <textarea rows="12" placeholder="Your message" onChange={ (event) => this.handleChange("message", event)}></textarea>
+            <textarea rows="11" placeholder="Your message" onChange={ (event) => this.handleChange("message", event)}></textarea>
           </div>
         </div>
 
