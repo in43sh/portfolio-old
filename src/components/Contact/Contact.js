@@ -10,7 +10,8 @@ export default class Contact extends Component {
       name: '',
       email: '',
       phone: '',
-      message: ''
+      message: '',
+      sent: false
     }
   }
 
@@ -21,6 +22,7 @@ export default class Contact extends Component {
 
   submit(event) {
     event.preventDefault();
+    this.setState({sent: true});
     const { name, email, phone, message } = this.state;
     axios.post('/send-email', {name, email, phone, message})
     .then(res => {
@@ -30,6 +32,9 @@ export default class Contact extends Component {
   }
 
   render() {
+    const { name, email, phone, message } = this.state;
+    const isEnabled =
+      name.length > 0 && email.length > 0 && phone.length > 0 && message.length > 0;
     return (
       <div className="contact-main-container-parent">
         <h1>Contact me</h1>
@@ -51,7 +56,11 @@ export default class Contact extends Component {
         </div>
 
         <div className="send-message-btn">
-          <button onClick={(event) => this.submit(event)}> SEND MESSAGE</button>
+          {!this.state.sent ?
+            <button disabled={!isEnabled} onClick={(event) => this.submit(event)}>SEND MESSAGE</button>
+            : <button>SENT!</button>
+          }
+          
         </div>
       </div>
     );
