@@ -1,77 +1,90 @@
-.contact-main-container-parent {
+.contact-main-container {
   width: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: white;
+  padding-top: 20px;
 }
 
-.contact-main-container-child {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-info-container {
+.contact-form {
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.contact-outer-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.contact-inner-container {
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  margin: 10px;
+  background-color: #ffffff;
 }
 
-.contact-input-container {
+.contact-top-content-container {
   width: 100%;
-  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-input-container > input {
-  width: 100%; 
-  box-sizing: border-box;
-  padding: 25px;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  border: 1px solid #ced4da;
-}
-
-.contact-message-container {
+.contact-input {
   width: 100%;
-  margin: 12px 0;
-}
-
-.contact-message-container > textarea {
-  width: 100%; 
-  height: 258px;
-  box-sizing: border-box;
-  padding: 25px;
-  border-radius: 0.25rem;
-  font-size: 1rem;
   border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin: 5px 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
-.send-message-btn button {
+.contact-inner-container > textarea {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin: 5px 0;
+  padding: 5;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-btn {
+  width: 50px;
   background-color: rgb(92, 180, 207);
-  margin-bottom: 20px;
-  font-size: 18px;
-  padding: 20px;
-  font-family: Montserrat;
-  font-weight: 700;
-  color: white;
+  font-size: 1rem;
   border-radius: 0.25rem;
 }
 
 @media (min-width: 600px) {
-  .contact-main-container-child {
-    width: 90%;
+  .contact-top-content-container {
     display: flex;
     flex-direction: row;
   }
 
-  .contact-info-container {
-    margin: 0 12px;
+  .contact-input {
+    width: 50%;
+    padding: 12px;
+    margin: 0px 5px;
+    border: 1px solid #ced4da;
   }
 
-  .contact-message-container {
-    margin: 12px;
+  .contact-inner-container > textarea {
+    margin: 10px 5px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+  }
+
+  .contact-btn {
+    width: 75px;
+    background-color: rgb(92, 180, 207);
+    margin-left: 5px;
+    color: white;
   }
 }

@@ -9,7 +9,6 @@ export default class Contact extends Component {
     this.state = {
       name: '',
       email: '',
-      phone: '',
       message: '',
       sent: false
     }
@@ -20,48 +19,32 @@ export default class Contact extends Component {
     this.setState({[property]: event.target.value})
   }
 
-  submit(event) {
+  handleSubmit(event) {
     event.preventDefault();
     this.setState({sent: true});
-    const { name, email, phone, message } = this.state;
-    axios.post('/send-email', {name, email, phone, message})
+    const { name, email, message } = this.state;
+    axios.post('/send-email', {name, email, message})
     .then(res => {
       console.log(res);
     })
     .catch(error => console.log(error));
   }
-
   render() {
-    const { name, email, phone, message } = this.state;
-    const isEnabled =
-      name.length > 0 && email.length > 0 && phone.length > 0 && message.length > 0;
     return (
-      <div className="contact-main-container-parent">
+      <div className="contact-main-container">
         <h1>Contact me</h1>
-        <div className="contact-main-container-child">
-          <div className="contact-info-container">     
-            <div className="contact-input-container">
-              <input placeholder="Your name" onChange={ (event) => this.handleChange("name", event)}/>
+        <form className="contact-form" onSubmit={ (event) => this.handleSubmit(event) }>
+          <div className="contact-outer-container">
+            <div className="contact-inner-container">
+              <div className="contact-top-content-container">
+                <input className="contact-input contact-name" placeholder="name" onChange={ (event) => this.handleChange("name", event)}/>
+                <input className="contact-input" placeholder="email" onChange={ (event) => this.handleChange("email", event)}/>
+              </div>
+              <textarea className="contact-textarea" rows="10" placeholder="message" onChange={ (event) => this.handleChange("message", event)}></textarea>
+              <input className="contact-btn" value="Send" type="button"/>
             </div>
-            <div className="contact-input-container">
-              <input placeholder="Your email" onChange={ (event) => this.handleChange("email", event)}/>
-            </div> 
-            <div className="contact-input-container">
-              <input placeholder="Your phone" onChange={ (event) => this.handleChange("phone", event)}/>
-            </div> 
           </div>
-          <div className="contact-message-container">
-            <textarea rows="11" placeholder="Your message" onChange={ (event) => this.handleChange("message", event)}></textarea>
-          </div>
-        </div>
-
-        <div className="send-message-btn">
-          {!this.state.sent ?
-            <button disabled={!isEnabled} onClick={(event) => this.submit(event)}>SEND MESSAGE</button>
-            : <button>SENT!</button>
-          }
-          
-        </div>
+        </form>
       </div>
     );
   }
