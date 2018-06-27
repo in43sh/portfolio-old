@@ -8,7 +8,17 @@
   /* background: radial-gradient(black, white); */
 }
 
-.navigation {
+.nav-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(92, 180, 207);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
