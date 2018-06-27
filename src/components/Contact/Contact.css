@@ -56,11 +56,20 @@
 }
 
 .contact-btn {
-  width: 50px;
+  width: 75px;
+  height: 25px;
   background-color: rgb(92, 180, 207);
   font-size: 1rem;
   border-radius: 0.25rem;
+  margin-left: 5px;
+  color: white;
 }
+
+/* .contact-btn {
+  width: 75px;
+  background-color: rgb(92, 180, 207);
+  
+} */
 
 @media (min-width: 600px) {
   .contact-top-content-container {
@@ -81,10 +90,5 @@
     border: 1px solid #ced4da;
   }
 
-  .contact-btn {
-    width: 75px;
-    background-color: rgb(92, 180, 207);
-    margin-left: 5px;
-    color: white;
-  }
+
 }

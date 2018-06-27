@@ -12,30 +12,50 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      isShown: false
+    }
+  }
+
+  showHidden () {
+    this.setState ({
+      isShown: !this.state.isShown
+    })
+    
+  }
+
   render() {
     return (
       <div className="main-container">
         <nav className="nav-1">
           <div className="logo-container">
             <Scroll className="links" type="id" element="_top">
-              <img className="logo" src={logo} alt="my logo"/>
+              <span className="logo-name">Sergey Sherstobitov</span>
             </Scroll>
           </div>
 
-          <div className="link-wrap">
-            <Scroll className="links" type="id" element="_about">About</Scroll>
-            <Scroll className="links" type="id" element="_skills">Skills</Scroll>
-            <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
-            <Scroll className="links" type="id" element="_contact">Contact</Scroll>
-            <div className="empty-container-25px"></div>
+          <div onClick={() => this.showHidden()}>
+            <i className="fas fa-bars menu-mobile-btn"></i>
           </div>
+
+          {!this.state.isShown ? null :
+            <div className="menu-mobile">
+              <div className="menu-mobile-inner-container">
+                <Scroll className="links" type="id" element="_about">About</Scroll>
+                <Scroll className="links" type="id" element="_skills">Skills</Scroll>
+                <Scroll className="links" type="id" element="_portfolio">Portfolio</Scroll>
+                <Scroll className="links" type="id" element="_contact">Contact</Scroll>
+              </div>
+            </div>
+          } 
         </nav>
 
-        <nav className="nav-1">
+        <nav className="nav-2">
           <div className="logo-container">
-            <Scroll className="links" type="id" element="_top">
-              <img className="logo" src={logo} alt="my logo"/>
-            </Scroll>
+            <Scroll className="links" type="id" element="_top">Sergey Sherstobitov</Scroll>
           </div>
 
           <div className="link-wrap">
