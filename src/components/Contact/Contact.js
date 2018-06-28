@@ -37,6 +37,14 @@ export default class Contact extends Component {
           <div className="contact-outer-container">
             <div className="contact-inner-container">
               <div className="contact-top-content-container">
+                <Validate>
+                  {({ validate, errorMessages }) => (
+                    <div>
+                      <input onChange={validate} name="first" required />
+                      <p>{errorMessages.first[0]}</p>
+                    </div>
+                  )}
+                </Validate>
                 <input className="contact-input contact-name" placeholder="name" onChange={ (event) => this.handleChange("name", event)}/>
                 <input className="contact-input" placeholder="email" onChange={ (event) => this.handleChange("email", event)}/>
               </div>
