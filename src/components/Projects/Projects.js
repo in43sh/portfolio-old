@@ -30,6 +30,10 @@ export default class Projects extends Component {
               <div className="projects-item-name">
                 <a href="http://woofwalks.us/" target="_blank" rel="noopener noreferrer">woofwalks.us</a>
               </div>
+              {/* <div className="btn-modal" onClick="">See more</div>
+              <div>
+
+              </div> */}
             </div>
           </div>
         </div>

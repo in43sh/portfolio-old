@@ -65,12 +65,6 @@
   color: white;
 }
 
-/* .contact-btn {
-  width: 75px;
-  background-color: rgb(92, 180, 207);
-  
-} */
-
 @media (min-width: 600px) {
   .contact-top-content-container {
     display: flex;

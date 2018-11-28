@@ -43,3 +43,7 @@
   color: white;
   /* text-decoration: none; */
 }
+
+.btn-modal {
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from './images/person.png';
+// import logo from './images/person.png';
 
 import Scroll from 'react-scroll-to-element';
 
@@ -24,7 +24,6 @@ class App extends Component {
     this.setState ({
       isShown: !this.state.isShown
     })
-    
   }
 
   render() {
@@ -50,7 +49,7 @@ class App extends Component {
                 <Scroll className="links" type="id" element="_contact">Contact</Scroll>
               </div>
             </div>
-          } 
+          }
         </nav>
 
         <nav className="nav-2">
