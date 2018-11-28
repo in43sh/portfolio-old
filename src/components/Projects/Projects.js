@@ -28,7 +28,7 @@ export default class Projects extends Component {
               </div>
               <div className="projects-item-description">Dogwalking app</div>
               <div className="projects-item-name">
-                <a href="http://woofwalks.us/" target="_blank" rel="noopener noreferrer">woofwalks.us</a>
+                <a href="https://build-48tghetxf.now.sh/#/" target="_blank" rel="noopener noreferrer">build-48tghetxf.now.sh</a>
               </div>
               {/* <div className="btn-modal" onClick="">See more</div>
               <div>
