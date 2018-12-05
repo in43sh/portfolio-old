@@ -36,7 +36,7 @@ export default class Projects extends Component {
             </div>
             <div className="projects-item-container">
               <div className="projects-item-image-container">
-                <img src={nearballard} alt="woofwalks.us" />
+                <img src={nearballard} alt="nearballard.us" />
               </div>
               <div className="projects-item-description">N.E.A.R. Ballard</div>
               <div className="projects-item-name">
