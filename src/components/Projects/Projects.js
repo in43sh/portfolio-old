@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.css';
-// import aivazovsky from '../images/aivazovsky.jpg';
-import group from '../images/group.png'
-// import group from '../images/group.jpg';
+import woofwalks from '../images/woofwalks.png';
+import nearballard from '../images/nearballard.png';
 
 export default class Projects extends Component {
   render() {
@@ -24,7 +23,7 @@ export default class Projects extends Component {
             */}
             <div className="projects-item-container">
               <div className="projects-item-image-container">
-                <img src={group} alt="woofwalks.us" />
+                <img src={woofwalks} alt="woofwalks.us" />
               </div>
               <div className="projects-item-description">Dogwalking app</div>
               <div className="projects-item-name">
@@ -37,7 +36,7 @@ export default class Projects extends Component {
             </div>
             <div className="projects-item-container">
               <div className="projects-item-image-container">
-                <img src={group} alt="woofwalks.us" />
+                <img src={nearballard} alt="woofwalks.us" />
               </div>
               <div className="projects-item-description">N.E.A.R. Ballard</div>
               <div className="projects-item-name">
