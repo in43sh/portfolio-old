@@ -35,6 +35,15 @@ export default class Projects extends Component {
 
               </div> */}
             </div>
+            <div className="projects-item-container">
+              <div className="projects-item-image-container">
+                <img src={group} alt="woofwalks.us" />
+              </div>
+              <div className="projects-item-description">N.E.A.R. Ballard</div>
+              <div className="projects-item-name">
+                <a href="http://nearballard.us/" target="_blank" rel="noopener noreferrer">nearballard.us</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
