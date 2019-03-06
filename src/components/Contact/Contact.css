@@ -65,7 +65,7 @@
   color: white;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .contact-top-content-container {
     display: flex;
     flex-direction: row;

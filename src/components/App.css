@@ -105,7 +105,7 @@
   background-color: rgb(56, 160, 191);
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .navigation span {
     font-size: 20px;
     text-decoration: none;
