@@ -49,7 +49,7 @@ export default class Projects extends Component {
               </div>
               <div className="projects-item-description">ACR tires shop</div>
               <div className="projects-item-name">
-                <a href="http://68.183.174.138" target="_blank" rel="noopener noreferrer">ACR tires</a>
+                <a href="http://68.183.174.138/" target="_blank" rel="noopener noreferrer">ACR tires</a>
               </div>
             </div>
             {/* <div className="btn-modal" onClick="">See more</div>
