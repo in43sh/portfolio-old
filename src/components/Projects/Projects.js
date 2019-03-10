@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Projects.css';
 import woofwalks from '../images/woofwalks.png';
 import nearballard from '../images/nearballard.png';
+import acr from '../images/acr-tire-shop.png';
 
 export default class Projects extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Projects extends Component {
               </div>
             </div>
             */}
+            {/* WoofWalks project */}
             <div className="projects-item-container">
               <div className="projects-item-image-container">
                 <img src={woofwalks} alt="woofwalks.us" />
@@ -29,11 +31,8 @@ export default class Projects extends Component {
               <div className="projects-item-name">
                 <a href="https://build-48tghetxf.now.sh/#/" target="_blank" rel="noopener noreferrer">build-48tghetxf.now.sh</a>
               </div>
-              {/* <div className="btn-modal" onClick="">See more</div>
-              <div>
-
-              </div> */}
             </div>
+            {/* NEAR Ballard project */}
             <div className="projects-item-container">
               <div className="projects-item-image-container">
                 <img src={nearballard} alt="nearballard.us" />
@@ -43,6 +42,20 @@ export default class Projects extends Component {
                 <a href="http://nearballard.us/" target="_blank" rel="noopener noreferrer">nearballard.us</a>
               </div>
             </div>
+            {/* NEAR Ballard project */}
+            <div className="projects-item-container">
+              <div className="projects-item-image-container">
+                <img src={acr} alt="ACR tires" />
+              </div>
+              <div className="projects-item-description">ACR tires shop</div>
+              <div className="projects-item-name">
+                <a href="http://68.183.174.138" target="_blank" rel="noopener noreferrer">ACR tires</a>
+              </div>
+            </div>
+            {/* <div className="btn-modal" onClick="">See more</div>
+              <div>
+
+              </div> */}
           </div>
         </div>
       </div>
